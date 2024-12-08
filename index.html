@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daiana Stefani Luzmila">
+    <meta name="keywords" content="Consultora, Forestal, Industrial, Ambiental, Higiene, Seguridad, Laboral">
+    <title>Consultora Gómez & Asociados</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="logo2.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="header">
+            <img src="logo2.png" alt="Consultora Gómez & Asociados Logo" class="logo">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobrenosotros">Sobre Nosotros</a></li> <!-- NUEVO -->
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <main id="inicio">
+        <section class="hero">
+            <h1>CONSULTORA GÓMEZ & ASOCIADOS</h1>
+            <h2>FORESTAL - INDUSTRIAL - AMBIENTAL - HIGIENE Y SEGURIDAD LABORAL</h2>
+            <p>Brindando soluciones integrales y sostenibles para tus proyectos.</p>
+        </section>
+    </main>
+
+    <!-- Información sobre Nosotros -->
+    <section id="sobrenosotros" class="about-section">
+        <div class="about-container">
+            <h2>Sobre Nosotros</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Ingeniería Forestal</h3>
+                    <p>MP N° 314</p>
+                </div>
+                <div class="about-card">
+                    <h3>Higiene y Seguridad</h3>
+                    <p>Especialistas en normativas laborales.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Consultora Ambiental</h3>
+                    <p>Reg. MEYRNR N° 146<br>RNCEA N° 640</p>
+                </div>
+                <div class="about-card">
+                    <h3>Secaderos y Calderas</h3>
+                    <p>Especialistas en sistemas de madera.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Responsable Técnica</h3>
+                    <p>CATEM-HOSETRAM-FEM - Senasa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services-section">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-gallery">
+            <div class="service">
+                <img src="higiene.jpg" alt="Higiene y Seguridad">
+                <h3>Higiene y Seguridad</h3>
+                <p>Programas de prevención y protección en el ámbito laboral.</p>
+            </div>
+            <div class="service">
+                <img src="ambiental.jpg" alt="Consultoría Ambiental">
+                <h3>Consultoría Ambiental</h3>
+                <p>Soluciones para el cumplimiento normativo y la sostenibilidad.</p>
+            </div>
+            <div class="service">
+                <img src="forestal.jpg" alt="Gestión Forestal">
+                <h3>Gestión Forestal</h3>
+                <p>Planificación y gestión de recursos naturales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Llamado a la acción -->
+    <section class="estimate-section">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes un proyecto en mente? ¡Estamos aquí para ayudarte!</p>
+        <button onclick="location.href='#contacto'">Solicitar Asesoramiento</button>
+    </section>
+
+    <!-- Contacto -->
+    <div id=contacto    class="contact-section">
+        <h2>Contáctanos</h2>
+        <form class="contact-form">
+            <label for="name">Nombre*</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre y apellido" required>
+    
+            <label for="address">Dirección*</label>
+            <input type="text" id="address" name="address" placeholder="Tu dirección física" required>
+    
+            <label for="email">Correo electrónico*</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+    
+            <label for="phone">Teléfono*</label>
+            <input type="tel" id="phone" name="phone" placeholder="Tu número de teléfono" required>
+    
+            <label for="interest">¿Estás interesado en cuidado de jardines residencial o comercial?*</label>
+            <select id="interest" name="interest">
+                <option value="residential">Residencial</option>
+                <option value="commercial">Comercial</option>
+            </select>
+    
+            <label for="services">¿Qué servicios te interesan? (Marca todas las opciones que correspondan.)*</label>
+            <div>
+                <label><input type="checkbox" name="services" value="lawn_maintenance"> Mantenimiento de jardín (Corte y bordado)</label>
+                <label><input type="checkbox" name="services" value="landscape_design"> Diseño de paisajismo</label>
+                <label><input type="checkbox" name="services" value="mulch_installation"> Instalación de mantillo</label>
+                <label><input type="checkbox" name="services" value="debris_removal"> Eliminación de escombros y limpieza</label>
+                <label><input type="checkbox" name="services" value="junk_removal"> Eliminación de desechos</label>
+                <label><input type="checkbox" name="services" value="other"> Otro</label>
+            </div>
+    
+            <label for="contact_method">¿Cómo prefieres que te contactemos?*</label>
+            <select id="contact_method" name="contact_method">
+                <option value="phone">Teléfono</option>
+                <option value="email">Correo electrónico</option>
+            </select>
+    
+            <label for="message">Mensaje*</label>
+            <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Contacto</h3>
+                <p>📞 Teléfono: 3751-408745</p>
+                <p>📧 Email: info@consultoragomez.com</p>
+            </div>
+        </div>
+        <p>&copy; 2024 Consultora Gómez & Asociados. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
